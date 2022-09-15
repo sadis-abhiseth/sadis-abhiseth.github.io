@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Combo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Combo&family=Oswald:wght@700&display=swap');
+
+body{
+
+    border: 10px solid rgba(0, 0, 0, 0.911);
+    border-bottom: 0ch;
+    background-image:url(https://images.pexels.com/photos/1323550/pexels-photo-1323550.jpeg?cs=srgb&dl=pexels-simon-berger-1323550.jpg&fm=jpg) ;
+    background-size: cover;
+    background-attachment: fixed;
+    
+
+}
+    
+h1{
+    position: relative;
+    font-size: 60px;
+    font-family:Oswald;
+    text-align: center;
+    color:darkmagenta;
+   
+}
+
+.JS {
+    position:relative;
+    left:750px;
+    font-family: Combo;
+    font-size: 35px;
+    color: black;
+    font-weight: bold;
+}
