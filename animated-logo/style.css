@@ -1,0 +1,68 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+.Background{
+
+            width: 100%;
+            height: 100vh;
+            background:#06f1ca;
+}
+
+.LOADING{
+
+    width: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, 50% );
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.LOADING span{
+    width: 32px;
+    height: 32px;
+    background: red;
+    margin: 4px;
+    transition: all 0.3s ease-in; 
+    animation: colorize 2s  linear infinite both;
+
+}
+
+.LOADING span:nth-child(1){
+
+    background:#ff3838;
+    animation-delay: 0.5s;
+}
+
+.LOADING span:nth-child(2){
+
+    background:#f1c40f;
+    animation-delay: 1s;
+}
+
+.LOADING span:nth-child(4){
+
+    background:greenyellow;
+    animation-delay: 1.5s;
+}
+
+.LOADING span:nth-child(3){
+
+    background:#18dcff;
+    animation-delay: 2s;
+}
+
+@keyframes colorize{
+         to{
+            background: #fff;
+            transform: scale(1.1);
+           }
+}
