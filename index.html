@@ -3,54 +3,73 @@
 
 <head>
     <title>WebSites by Sadis</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         h2 {text-align: center;}
-        div {text-align: center;}
-        .card {
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-            transition: 0.3s;
-            width: 40%;
+
+        .styled-table {
+            border-collapse: collapse;
+            margin: 25px 0;
+            font-size: 0.9em;
+            font-family: sans-serif;
+            min-width: 400px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
         }
 
-        .card:hover {
-            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+        .styled-table thead tr {
+            background-color: #009879;
+            color: #ffffff;
+            text-align: left;
         }
 
-        .container {
-            padding: 2px 16px;
+        .styled-table th,
+        .styled-table td {
+            padding: 12px 15px;
+        }
+
+        .styled-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+
+        .styled-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+
+        .styled-table tbody tr:last-of-type {
+            border-bottom: 2px solid #009879;
+        }
+
+        .styled-table tbody tr.active-row {
+            font-weight: bold;
+            color: #009879;
         }
     </style>
 </head>
 
 <body>
-
     <h2>WebSites by Sadis</h2>
 
-    <div class="card">
-        <img src="images/multiplication.webp" alt="Avatar" style="width:20%">
-        <div class="container">
-            <h4><b>Multplication Table</b></h4>
-            <p><A HREF="multiplication-table/index.html">Visit it here</A></p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="images/animated-logo.png" alt="Avatar" style="width:20%">
-        <div class="container">
-            <h4><b>Animated Logo</b></h4>
-            <p><A HREF="animated-logo/index.html">Visit it here</A></p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="images/animated-logo.png" alt="Avatar" style="width:20%">
-        <div class="container">
-            <h4><b>Loading Animation</b></h4>
-            <p><A HREF="loading-animation/index.html">Visit it here</A></p>
-        </div>
-    </div>
+    <table class="styled-table">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Link</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Multplication Table <a href="mini-projects/multiplication-table/index.html" target="_blank">🧮</a></td>
+        </tr>
+        <tr class="active-row">
+            <td>2</td>
+            <td>Animated Logo <a href="mini-projects/animated-logo/index.html" target="_blank"></a></td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Loading Animation <a href="mini-projects/loading-animation/index.html" target="_blank">🪢</a></td>
+        </tr>
+    </tbody>
+</table>
 
 </body>
-
 </html>
