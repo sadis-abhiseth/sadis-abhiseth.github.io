@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 6</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="stars.png" id="stars">
+        <img src="moon.png" id="moon">
+        <img src="mountains_behind.png" id="mountains_behind">
+        <h2 id="text">Microsoft</h2>
+        <a href="#sec" id="btn">Explore</a>
+        <img src="mountains_front.png" id="mountain_front">
+    </section>
+    <div class="sec" id="sec">
+        <h2>About Us</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro accusantium doloribus cupiditate, tenetur blanditiis at, aliquam ab odit voluptas eum sed sit! Eaque numquam autem, provident omnis voluptatum nostrum ea facilis, officia doloremque exercitationem a harum ducimus deserunt qu
+            ae, beatae consequatur eos iusto ipsa illum porro animi? Similique molestiae consequatur sed vero nemo animi ex in esse itaque nostrum incidunt obcaecati veniam, facere odio tenetur cum laboriosam doloremque neque quidem. Minus ad illum animi quam. Exe
+            rcitationem aspernatur, quam ipsam quae voluptas accusamus quis! In nisi saepe illo hic quia magni! Eum dolorum asperiores eveniet dolor sequi vero corporis repellat Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi sit voluptatem fugit consectetur officiis eos natus accusantium dolores e
+            arum, possimus, sapiente ex. Sed quia omnis, enim maxime dignissimos natus doloribus vitae dolorum et excepturi culpa minus est iste earum maiores numquam blanditiis temporibus asperiores mollitia nesciunt, neque consequatur, debitis exercitationem. Similique dolorum perferendis exercitationem, quibusdam facere totam unde provident voluptat
+            es deserunt aperiam eligendi distinctio saepe, pariatur porr
+            o! Sunt mollitia deserunt ipsa exercitationem illum nam neque hic, dolore sit explicabo debitis obcaecati, aut dolorem esse soluta consequuntur suscipit cum atque vel assumenda molestias? Libero reprehenderit pariatur corrupti sint doloremque aperiam inventore?<br><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. At neque quisquam
+             minima, quasi error blanditiis, sunt nihil quae, beatae minus magni sint eaque nesciunt quaerat repellendus earum corrupti molestiae vel? Tempore dolore est minus. Ipsum quos minima assumenda? Ab maiores incidunt quasi vel, magni iste dicta. Est, natus temporibus quis, totam mollitia tempore autem adip
+            isci nisi ad ullam doloribus blanditiis exercitationem eveniet cumque quo. Aut numquam architecto ad ea accusantium id laborum quam nobis debitis vel tempora fugit aliquid, molestias in magnam omnis 
+            maiores praesentium quos? Totam temporibus quisquam amet nulla, quas eum eius nemo pariatur quae sequi facilis laborum iusto omnis illum aspernatur a numquam doloremque, eos fugiat? Consequatur dolore doloribus et neque repellat? Officiis provident pariatur dolor natus odio, laborum quisquam voluptatibus velit et quibusdam? Totam similique id magnam ab reiciendis sed ad dolore
+            m voluptates. Itaque odit et incidunt distinctio maxime quisquam optio! Beatae voluptatem, accusamus illo dignissimos rem doloremque libero tempora recusandae labore delectus! Ea hic dolores dignissimos alias fugit itaque, error veritatis eaquebrs.
+            <br><br> </p>
+
+    </div>
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mountains_behind = document.getElementById('mountains_behind');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let mountain_front = document.getElementById('mountain_front');
+        let header = document.querySelector('header');
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+            mountain_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        })
+    </script>
+</body>
+</html>
